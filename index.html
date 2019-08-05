@@ -3,17 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Cellphone layers on hover</title>
+    <title>RQHomepage</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class = 'container'>
-        <img src='images/Login Mobile.png'>
-        <img src='images/Login Mobile.png'>
-        <img src='images/Login Mobile.png'>
-        <img src='images/Login Mobile.png'>
-        
-    </div>
+      <!-- <nav>
+        <img src="" alt="">
+        <ul>
+          <li>Premium</li>
+          <li>Discover</li>
+          <li>Help</li>
+          <li>Download</li>
+        </ul>
+      </nav>  -->
+      <header>
+      </header>
 
+      <section>
+          <div class ="container">
+            <img src = "images/Login Mobile.png">
+            <img src = "images/Login Mobile.png">
+            <img src = "images/Login Mobile.png">
+            <img src = "images/Login Mobile.png">
+          </div>
+      </section>
+
+      <section id = "invert">
+        <div class ="pointer"></div>
+        <h1>Invert backgrounds</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </section>
+
+    <div id='moveRQ'>
+      <h2>Move at the speed of ReloQuest</h2>
+      <div id = 'cursor'></div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   <script type="text/javascript">
+   $(document).mousemove(function(e){
+     $('.pointer').css({left:e.pageX, top:e.pageY})
+   })
+   </script>
   </body>
 </html>
